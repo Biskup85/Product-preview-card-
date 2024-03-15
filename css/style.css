@@ -1,0 +1,144 @@
+:root {
+	--Dark-cyan: hsl(158, 36%, 37%);
+	--Cream: hsl(30, 38%, 92%);
+	--Very-dark-blue: hsl(212, 21%, 14%);
+	--Dark-grayish-blue: hsl(228, 12%, 48%);
+	--White: hsl(0, 0%, 100%);
+	--ff-primary: 'Montserrat';
+	--ff-secondary: 'Fraunces';
+	--fw-bold: 700;
+	--fw-reg: 500;
+}
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+body {    
+	margin: 1em auto;    
+	font-family: var(--ff-primary);
+	font-size: 0.9rem;
+	background-color: var(--Cream);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+	
+	
+
+section{    
+    padding-bottom: 2em;   
+}
+.container {
+	width: 90%;    
+	max-width: 550px;
+	margin: 0 auto;
+	background-color: var(--White);
+	border-radius: 10px;
+}
+.col {
+	width: 100%;
+    
+}
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: var(--fw-bold);
+	background-color: var(--Dark-cyan);
+	color: var(--White);
+	padding: 0.75em 2em;
+	border-radius: 10px;
+	margin:1em auto;
+	cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.btn:hover,
+.btn:focus {
+	background-color: var(--Very-dark-blue);
+}
+.icon {
+	padding-right: 0.2em;
+}
+h5 {
+	color: var(--Dark-grayish-blue);
+	font-weight: var(--fw-reg);
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+h1 {
+	font-family: var(--ff-secondary);
+	line-height: 1em;
+}
+p {
+	color: var(--Dark-grayish-blue);
+	font-size: 0.85rem;
+	line-height: 1.3em;
+}
+span {
+	padding-right: 1em;
+}
+.hero{
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+    background-image: url('../images/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.index--primary {
+	font-size: 1.5rem;
+	font-family: var(--ff-secondary);
+	font-weight: var(--fw-bold);
+	color: var(--Dark-cyan);
+}
+.index--secondary {
+	font-size: 0.75rem;
+	text-decoration: line-through;
+	color: var(--Dark-grayish-blue);
+}
+.col--primary{
+    align-self: stretch;
+}
+.col--seconadry {
+	padding: 0 2em;
+}
+@media (min-width: 500px) {
+	
+	.hero{
+        height: 350px;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius:initial;    
+        
+        background-image: url('../images/image-product-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;        
+	}
+	.container {       
+        
+		padding: inherit;
+	}
+	.row {
+		display: flex;
+        justify-content: center;
+	}	
+    .index{
+        position: relative;
+        top: .5em;
+    }
+	.index .row {
+		align-items: center;
+	}
+    .btn{
+        position: relative;
+        top: 1em;
+        width: 100%;        
+    }
+
+}
