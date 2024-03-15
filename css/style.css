@@ -20,7 +20,7 @@ body {
 	font-family: var(--ff-primary);
 	font-size: 0.9rem;
 	background-color: var(--Cream);
-    min-height: 600px;
+    min-height: 700px;
     display: flex;
     align-items: center;
 }
@@ -39,7 +39,7 @@ section{
 	border-radius: 10px;
 }
 .col {
-	width: 100%;
+	width: 90%;
     
 }
 .btn {
@@ -70,7 +70,7 @@ h5 {
 }
 h1 {
 	font-family: var(--ff-secondary);
-	line-height: 1em;
+	line-height: 1rem;
 }
 p {
 	color: var(--Dark-grayish-blue);
@@ -106,12 +106,22 @@ span {
     align-self: stretch;
 }
 .col--seconadry {
-	padding: 0 2em;
+	padding: 0 1em 0 1em;
 }
 @media (min-width: 500px) {
-	
+    h5{
+        font-size: 1rem;
+    }
+	h1{
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+
 	.hero{
-        height: 350px;
+        height: 450px;
 		border-bottom-left-radius: 10px;
 		border-top-right-radius:initial;    
         
@@ -126,7 +136,8 @@ span {
 	}
 	.row {
 		display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        
 	}	
     .index{
         position: relative;
